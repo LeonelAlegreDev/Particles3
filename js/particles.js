@@ -126,15 +126,9 @@ window.addEventListener('resize', function(){
     init();
 });
 function initSplit(split){
-    if(window.innerWidth < 500){
-        split.style.width = window.innerWidth + "px";
-        split.style.height = window.innerHeight / 2 + "px";  
-        console.log(window.innerWidth);
-    }
-    else{
-        split.style.width = window.innerWidth / 2 + "px";
-        split.style.height = window.innerHeight + "px";
-    }
+    split.style.width = window.innerWidth / 2 + "px";
+    split.style.height = window.innerHeight + "px";
+    
 }
 initSplit(split);
 init();
